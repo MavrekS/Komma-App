@@ -1,0 +1,115 @@
+.tab-combobox-kontakti {
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.tab-combobox-trigger {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid var(--color-header-border);
+  border-radius: 8px;
+  padding: 0.5rem 0.625rem;
+  text-align: left;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.tab-combobox-trigger:disabled {
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+
+.tab-combobox-placeholder {
+  opacity: 0.65;
+}
+
+.tab-combobox-value {
+  opacity: 1;
+}
+
+.tab-combobox-error {
+  margin: 6px 0 0;
+  color: #c62828;
+}
+
+.tab-combobox-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.tab-combobox-modal {
+  width: min(560px, 100%);
+  max-height: 70vh;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-header-border);
+  border-radius: 12px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-combobox-title {
+  margin: 0 0 0.625rem;
+  color: var(--color-text);
+  font-size: 1rem;
+}
+
+.tab-combobox-loading {
+  margin: 0;
+  color: var(--color-text);
+}
+
+.tab-combobox-search {
+  width: 100%;
+  border: 1px solid var(--color-header-border);
+  border-radius: 8px;
+  padding: 0.55rem 0.625rem;
+  margin-bottom: 0.625rem;
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+.tab-combobox-search:focus {
+  outline: 2px solid color-mix(in srgb, var(--color-link) 40%, transparent);
+  outline-offset: 1px;
+}
+
+.tab-combobox-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.tab-combobox-item {
+  width: 100%;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid var(--color-header-border);
+  background: transparent;
+  color: var(--color-text);
+  padding: 0.625rem;
+  cursor: pointer;
+}
+
+.tab-combobox-item:hover {
+  background-color: color-mix(in srgb, var(--color-link) 8%, var(--color-background) 92%);
+}
+
+.tab-combobox-close {
+  margin-top: 0.75rem;
+  border: 0;
+  border-radius: 8px;
+  background-color: var(--color-link);
+  color: #fff;
+  padding: 0.625rem;
+  cursor: pointer;
+}

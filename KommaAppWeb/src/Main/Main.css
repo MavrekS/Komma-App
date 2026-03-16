@@ -1,0 +1,10 @@
+.main-content {
+	flex: 1;
+	min-width: 0;
+	padding: 1rem;
+}
+
+.main-placeholder {
+	color: var(--color-text);
+	opacity: 0.8;
+}

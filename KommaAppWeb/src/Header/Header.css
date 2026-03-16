@@ -1,0 +1,74 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1.25rem;
+  background: linear-gradient(
+    135deg,
+    var(--color-logo-bg),
+    color-mix(in srgb, var(--color-logo-bg) 82%, var(--color-logo-text) 18%)
+  );
+  border-bottom: 2px solid var(--color-header-border);
+}
+
+.company-logo {
+  width: 12.5rem;
+  max-width: 45vw;
+  height: auto;
+  object-fit: contain;
+}
+
+.app-title {
+  margin: 0;
+  font-size: clamp(1rem, 1.2vw + 0.7rem, 1.35rem);
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--color-logo-text);
+}
+
+.header-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.header-username {
+  font-weight: 600;
+  color: var(--color-logo-text);
+}
+
+.logout-button {
+  border: 1px solid #c62828;
+  background: #c62828;
+  color: var(--color-logo-text);
+  border-radius: 6px;
+  padding: 0.45rem 0.75rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.logout-button:hover {
+  background: #b71c1c;
+}
+
+@media (max-width: 700px) {
+  .app-header {
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .app-title {
+    width: 100%;
+  }
+
+  .header-actions {
+    margin-left: 0;
+  }
+
+  .logout-button {
+    margin-left: 0;
+  }
+}

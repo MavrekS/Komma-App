@@ -1,0 +1,31 @@
+.postavke-poslodavca-meni {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.postavke-poslodavca-title {
+  margin: 0 0 0.3rem;
+  color: var(--color-text);
+}
+
+.postavke-poslodavca-checkbox-row {
+  margin-top: 0.4rem;
+  margin-bottom: 0.3rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.postavke-poslodavca-actions {
+  margin-top: 0.8rem;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.postavke-poslodavca-actions .tab-button {
+  width: 20%;
+}

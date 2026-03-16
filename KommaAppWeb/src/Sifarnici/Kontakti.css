@@ -1,0 +1,87 @@
+.kontakti-screen {
+  width: 100%;
+  max-width: 900px;
+}
+
+.kontakti-add-btn {
+  background: var(--color-link);
+  color: var(--color-logo-text);
+  border: 1px solid var(--color-link);
+  border-radius: 5px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.9rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.kontakti-search {
+  width: 100%;
+  border: 1px solid var(--color-header-border);
+  border-radius: 5px;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+.kontakti-empty {
+  text-align: center;
+  margin-top: 1rem;
+  opacity: 0.7;
+}
+
+.kontakti-list {
+  border: 1px solid var(--color-header-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.kontakti-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem;
+  border-bottom: 1px solid var(--color-header-border);
+}
+
+.kontakti-row:last-child {
+  border-bottom: 0;
+}
+
+.kontakti-name {
+  margin: 0;
+  color: var(--color-text);
+}
+
+.kontakti-client {
+  margin: 0.15rem 0 0;
+  font-size: 0.82rem;
+  opacity: 0.7;
+}
+
+.kontakti-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.kontakti-action-btn {
+  border: 1px solid var(--color-header-border);
+  border-radius: 4px;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.kontakti-action-btn--edit {
+  background: var(--color-link);
+  color: var(--color-logo-text);
+  border-color: var(--color-link);
+}
+
+.kontakti-action-btn--delete {
+  background: #c62828;
+  color: var(--color-logo-text);
+  border-color: #c62828;
+}

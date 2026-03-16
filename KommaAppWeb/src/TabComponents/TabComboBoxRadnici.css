@@ -1,0 +1,45 @@
+@import './TabComboBoxAdrese.css';
+
+.tab-combobox-radnici {
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.tab-combobox-list--chips {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.tab-combobox-list--chips li {
+  display: flex;
+}
+
+.tab-combobox-item--chip {
+  width: auto;
+  border: 1px solid var(--color-header-border);
+  background: var(--color-button-bg);
+  color: var(--color-text);
+  border-radius: 5px;
+  padding: 0.35rem 0.6rem;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.tab-combobox-item--chip:hover {
+  background: var(--color-button-bg);
+}
+
+.tab-combobox-item--chip.tab-combobox-item--selected,
+.tab-combobox-item--chip.tab-combobox-item--selected:hover {
+  border-color: var(--color-link);
+  background: color-mix(in srgb, var(--color-link) 12%, var(--color-button-bg) 88%);
+  color: var(--color-text);
+}
+
+.tab-combobox-item--selected:not(.tab-combobox-item--chip),
+.tab-combobox-item--selected:not(.tab-combobox-item--chip):hover {
+  background-color: var(--color-link);
+  color: var(--color-background);
+}

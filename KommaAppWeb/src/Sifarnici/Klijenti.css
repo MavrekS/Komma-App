@@ -1,0 +1,97 @@
+.klijenti-screen {
+  width: 100%;
+  max-width: 900px;
+}
+
+.klijenti-add-btn {
+  background: var(--color-link);
+  color: #fff;
+  border: 1px solid var(--color-link);
+  border-radius: 5px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.9rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.klijenti-search {
+  width: 100%;
+  border: 1px solid var(--color-header-border);
+  border-radius: 5px;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+.klijenti-empty {
+  text-align: center;
+  margin-top: 1rem;
+  opacity: 0.7;
+}
+
+.klijenti-list {
+  border: 1px solid var(--color-header-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.klijenti-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem;
+  border-bottom: 1px solid var(--color-header-border);
+}
+
+.klijenti-row:last-child {
+  border-bottom: 0;
+}
+
+.klijenti-info {
+  min-width: 0;
+}
+
+.klijenti-name {
+  margin: 0;
+  color: var(--color-text);
+}
+
+.klijenti-client {
+  margin: 0.15rem 0 0;
+  font-size: 0.82rem;
+  opacity: 0.7;
+}
+
+.klijenti-id {
+  margin: 0.15rem 0 0;
+  font-size: 0.82rem;
+  opacity: 0.7;
+}
+
+.klijenti-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.klijenti-action-btn {
+  border: 1px solid var(--color-header-border);
+  border-radius: 4px;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.klijenti-action-btn--edit {
+  background: var(--color-link);
+  color: #fff;
+  border-color: var(--color-link);
+}
+
+.klijenti-action-btn--delete {
+  background: #c62828;
+  color: #fff;
+  border-color: #c62828;
+}

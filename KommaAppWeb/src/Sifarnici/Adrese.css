@@ -1,0 +1,108 @@
+.adrese-screen {
+  width: 100%;
+  max-width: 900px;
+}
+
+.adrese-add-btn {
+  background: var(--color-link);
+  color: var(--color-logo-text);
+  border: 1px solid var(--color-link);
+  border-radius: 5px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.9rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.adrese-search {
+  width: 100%;
+  border: 1px solid var(--color-header-border);
+  border-radius: 5px;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+.adrese-filters {
+  display: flex;
+  gap: 0.6rem;
+  align-items: stretch;
+  margin-bottom: 0.8rem;
+}
+
+.adrese-filters .adrese-search {
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.adrese-filter-select {
+  min-width: 190px;
+  border: 1px solid var(--color-header-border);
+  border-radius: 5px;
+  padding: 0.6rem 0.75rem;
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+.adrese-empty {
+  text-align: center;
+  margin-top: 1rem;
+  opacity: 0.7;
+}
+
+.adrese-list {
+  border: 1px solid var(--color-header-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.adrese-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem;
+  border-bottom: 1px solid var(--color-header-border);
+}
+
+.adrese-row:last-child {
+  border-bottom: 0;
+}
+
+.adrese-name {
+  margin: 0;
+  color: var(--color-text);
+}
+
+.adrese-client {
+  margin: 0.15rem 0 0;
+  font-size: 0.82rem;
+  opacity: 0.7;
+}
+
+.adrese-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.adrese-action-btn {
+  border: 1px solid var(--color-header-border);
+  border-radius: 4px;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.adrese-action-btn--edit {
+  background: var(--color-link);
+  color: var(--color-logo-text);
+  border-color: var(--color-link);
+}
+
+.adrese-action-btn--delete {
+  background: #c62828;
+  color: var(--color-logo-text);
+  border-color: #c62828;
+}

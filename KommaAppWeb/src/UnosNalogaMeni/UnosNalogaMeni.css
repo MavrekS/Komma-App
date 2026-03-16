@@ -1,0 +1,66 @@
+.unos-naloga-meni {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 780px;
+}
+
+.unos-naloga-submit-row {
+	margin-top: 10px;
+	width: 80%;
+}
+
+.unos-naloga-status-chip-wrap {
+	width: 80%;
+	display: flex;
+	gap: 0.45rem;
+	flex-wrap: wrap;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.unos-naloga-status-chip {
+	border: 1px solid var(--color-header-border);
+	background: var(--color-button-bg);
+	color: var(--color-text);
+	border-radius: 5px;
+	padding: 0.35rem 0.6rem;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 0.75rem;
+}
+
+.unos-naloga-status-chip.is-selected {
+	border-color: var(--color-link);
+	background: color-mix(in srgb, var(--color-link) 12%, var(--color-button-bg) 88%);
+}
+
+.unos-naloga-inline-field-row {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	width: 100%;
+}
+
+.unos-naloga-inline-field-row > *:first-child {
+	flex: 1;
+}
+
+.unos-naloga-inline-add-btn {
+	border: 1px solid color-mix(in srgb, var(--color-link) 60%, var(--color-header-border) 40%);
+	background: color-mix(in srgb, var(--color-link) 14%, var(--color-button-bg) 86%);
+	color: var(--color-link);
+	border-radius: 5px;
+	padding: 0.3rem 0.55rem;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 0.75rem;
+	opacity: 0.95;
+	white-space: nowrap;
+}
+
+.unos-naloga-inline-add-btn:hover {
+	opacity: 1;
+	background: color-mix(in srgb, var(--color-link) 22%, var(--color-button-bg) 78%);
+	border-color: var(--color-link);
+}

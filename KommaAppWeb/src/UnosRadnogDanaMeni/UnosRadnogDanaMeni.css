@@ -1,0 +1,19 @@
+.unos-radnog-dana-meni {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 780px;
+}
+
+.unos-radnog-dana-submit-row {
+  margin-top: 10px;
+  width: 80%;
+}
+
+.unos-radnog-dana-preview-info {
+  width: 80%;
+  margin: 6px 0 0;
+  color: var(--color-text);
+  opacity: 0.8;
+  font-size: 0.85rem;
+}

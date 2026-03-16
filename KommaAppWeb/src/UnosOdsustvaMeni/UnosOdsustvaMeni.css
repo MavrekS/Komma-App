@@ -1,0 +1,11 @@
+.unos-odsustva-meni {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 780px;
+}
+
+.unos-odsustva-submit-row {
+  margin-top: 10px;
+  width: 80%;
+}

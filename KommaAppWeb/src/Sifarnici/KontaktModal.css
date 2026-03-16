@@ -1,0 +1,69 @@
+.kontakt-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: color-mix(in srgb, var(--color-logo-bg) 35%, transparent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+  padding: 1rem;
+}
+
+.kontakt-modal {
+  width: min(540px, 100%);
+  background: var(--color-background);
+  border: 1px solid var(--color-header-border);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.kontakt-modal-title {
+  margin: 0 0 0.9rem;
+  color: var(--color-text);
+}
+
+.kontakt-modal-field-label {
+  margin: 0.2rem 0 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.kontakt-modal-input {
+  width: 100%;
+  border: 1px solid var(--color-header-border);
+  border-radius: 6px;
+  padding: 0.65rem;
+  color: var(--color-text);
+  background: var(--color-background);
+  margin-bottom: 0.6rem;
+}
+
+.kontakt-modal-klijent-wrap {
+  margin-bottom: 0.8rem;
+}
+
+.kontakt-modal-actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.kontakt-modal-btn {
+  flex: 1;
+  border: 1px solid var(--color-header-border);
+  border-radius: 6px;
+  padding: 0.6rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.kontakt-modal-btn--cancel {
+  background: var(--color-button-bg);
+  color: var(--color-text);
+}
+
+.kontakt-modal-btn--save {
+  background: var(--color-link);
+  border-color: var(--color-link);
+  color: var(--color-logo-text);
+}

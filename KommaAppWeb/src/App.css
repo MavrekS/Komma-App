@@ -1,0 +1,62 @@
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-shell {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-layout {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+.app-alert-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1600;
+  background: color-mix(in srgb, var(--color-logo-bg) 35%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.app-alert-modal {
+  width: min(460px, 100%);
+  background: var(--color-background);
+  border: 1px solid var(--color-header-border);
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.app-alert-message {
+  margin: 0;
+  color: var(--color-text);
+  white-space: pre-wrap;
+}
+
+.app-alert-message--error {
+  color: #c62828;
+}
+
+.app-alert-button {
+  align-self: flex-end;
+  border: 1px solid var(--color-link);
+  background: var(--color-link);
+  color: var(--color-logo-text);
+  border-radius: 6px;
+  padding: 0.45rem 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}

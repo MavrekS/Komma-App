@@ -1,0 +1,67 @@
+.izracun-dodataka-meni {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.izracun-dodataka-month-input {
+  width: 80%;
+  min-height: 40px;
+  border: 1px solid var(--color-header-border);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.izracun-dodataka-month-row {
+  width: 80%;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.izracun-dodataka-month-row .izracun-dodataka-month-input {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.izracun-dodataka-year-input {
+  max-width: 130px;
+}
+
+.izracun-dodataka-submit-row {
+  margin-top: 10px;
+  width: 80%;
+}
+
+.izracun-dodataka-table-wrap {
+  margin-top: 0.75rem;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.izracun-dodataka-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-background);
+}
+
+.izracun-dodataka-table th,
+.izracun-dodataka-table td {
+  border: 1px solid var(--color-header-border);
+  padding: 0.5rem 0.6rem;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.izracun-dodataka-table th {
+  font-weight: 700;
+}
+
+.izracun-dodataka-name {
+  font-weight: 700;
+}

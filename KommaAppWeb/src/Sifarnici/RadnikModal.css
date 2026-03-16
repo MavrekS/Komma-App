@@ -1,0 +1,68 @@
+.radnik-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+  padding: 1rem;
+}
+
+.radnik-modal {
+  width: min(520px, 100%);
+  max-height: 80vh;
+  overflow: auto;
+  background: var(--color-background);
+  border: 1px solid var(--color-header-border);
+  border-radius: 10px;
+  padding: 1.1rem;
+}
+
+.radnik-modal-title {
+  margin: 0 0 0.9rem;
+  color: var(--color-text);
+}
+
+.radnik-modal-field-label {
+  margin: 0.1rem 0 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.radnik-modal-input {
+  width: 100%;
+  border: 1px solid var(--color-header-border);
+  border-radius: 6px;
+  padding: 0.6rem;
+  margin-bottom: 0.65rem;
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+.radnik-modal-actions {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.radnik-modal-btn {
+  flex: 1;
+  border: 1px solid var(--color-header-border);
+  border-radius: 6px;
+  padding: 0.6rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.radnik-modal-btn--cancel {
+  background: var(--color-button-bg);
+  color: var(--color-text);
+}
+
+.radnik-modal-btn--save {
+  background: var(--color-link);
+  color: #fff;
+  border-color: var(--color-link);
+}

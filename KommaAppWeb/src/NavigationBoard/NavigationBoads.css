@@ -1,0 +1,60 @@
+.navigation-board {
+	--nav-board-padding: 1rem;
+	min-width: 200px;
+    width: 15rem;
+	flex-shrink: 0;
+	min-height: 100%;
+	padding: var(--nav-board-padding);
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	border-right: 1px solid var(--color-header-border);
+	background: color-mix(in srgb, var(--color-logo-bg) 10%, var(--color-background) 90%);
+}
+
+.nav-section {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.navigation-board .nav-section .tab-button {
+	width: 100% !important;
+	display: block;
+	text-align: left;
+}
+
+.nav-section-divider {
+	margin-top: 0.25rem;
+	padding-top: 0.95rem;
+	position: relative;
+}
+
+.nav-section-divider::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: calc(-1 * var(--nav-board-padding));
+	right: calc(-1 * var(--nav-board-padding));
+	height: 2px;
+	border-radius: 999px;
+	clip-path: polygon(0 0, 100% 25%, 100% 75%, 0 100%);
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(0, 0, 0, 0.50) 45%,
+		rgba(0, 0, 0, 0.25) 100%
+	);
+}
+
+.nav-section-title {
+	margin: 0;
+	font-size: 0.95rem;
+	font-weight: 700;
+}
+
+@media (max-width: 900px) {
+	.navigation-board {
+		width: 160px;
+	}
+}

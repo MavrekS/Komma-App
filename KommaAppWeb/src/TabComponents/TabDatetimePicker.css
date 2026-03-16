@@ -1,0 +1,118 @@
+.tab-datetime-picker {
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.tab-datetime-picker-select-row {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.tab-datetime-picker-input {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid var(--color-header-border);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+.tab-datetime-picker-select {
+  appearance: none;
+}
+
+.tab-datetime-picker-date-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tab-datetime-picker-calendar-button {
+  min-height: 40px;
+  border: 1px solid var(--color-header-border);
+  border-radius: 8px;
+  padding: 0.45rem 0.65rem;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  cursor: pointer;
+}
+
+.tab-datetime-picker-native-date {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tab-datetime-picker-separator {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.tab-datetime-picker-time-wrap {
+  position: relative;
+  width: 8%;
+  min-width: 96px;
+}
+
+.tab-datetime-picker-time-trigger {
+  text-align: left;
+  cursor: pointer;
+}
+
+.tab-datetime-picker-time-menu {
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  bottom: auto;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.4rem;
+  border: 1px solid var(--color-header-border);
+  border-radius: 8px;
+  background: var(--color-background);
+  z-index: 20;
+}
+
+.tab-datetime-picker-time-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.tab-datetime-picker-time-back {
+  border: 1px solid var(--color-header-border);
+  border-radius: 6px;
+  background: var(--color-background);
+  color: var(--color-text);
+  cursor: pointer;
+  padding: 0.2rem 0.45rem;
+}
+
+.tab-datetime-picker-time-options {
+  max-height: 180px;
+  overflow-y: auto;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.tab-datetime-picker-time-option {
+  border: 1px solid var(--color-header-border);
+  border-radius: 6px;
+  background: var(--color-background);
+  color: var(--color-text);
+  text-align: left;
+  padding: 0.35rem 0.5rem;
+  cursor: pointer;
+}
+
+.tab-datetime-picker-time-option.is-selected {
+  font-weight: 700;
+}
