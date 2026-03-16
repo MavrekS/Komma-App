@@ -1,0 +1,14 @@
+{
+  "name": "my-react-app-backend",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.22.1",
+    "msnodesqlv8": "^5.1.5",
+    "mssql": "^11.0.1"
+  }
+}
